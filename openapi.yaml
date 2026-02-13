@@ -1,32 +1,38 @@
 openapi: 3.0.4
 info:
   title: Country Languages
-  description: Country Languages is a simple tool for getting the list of official and commonly spoken languages in a specific country.
+  description: >-
+    Country Languages is a simple tool for getting the list of official and
+    commonly spoken languages in a specific country.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
     email: hello@apiverve.com
     url: https://apiverve.com/contact
-  version: 1.0.9
+  version: 1.0.0
 externalDocs:
   description: Learn more about APIVerve
   url: https://docs.apiverve.com?utm_source=openapi
 servers:
-- url: https://api.apiverve.com/
+  - url: https://api.apiverve.com/
 paths:
   /v1/countrylanguages:
     get:
       summary: Get Official Country Languages
-      description: Country Languages is a simple tool for getting the list of official and commonly spoken languages in a specific country.
+      description: >-
+        Country Languages is a simple tool for getting the list of official and
+        commonly spoken languages in a specific country.
       operationId: countrylanguages
       parameters:
-      - name: name
-        in: query
-        schema:
-          type: string
-        required: true
-        description: The Country 2 letter ISO code for which you want to get languages for data (e.g., ZW)
-        example: ZW
+        - name: name
+          in: query
+          schema:
+            type: string
+          required: true
+          description: >-
+            The Country 2 letter ISO code for which you want to get languages
+            for data (e.g., ZW)
+          example: ZW
       responses:
         '200':
           description: Successful Response
@@ -42,38 +48,38 @@ paths:
                     type: string
                     description: error
                   data:
-                    type: string
+                    type: object
                     description: data
               example:
                 status: ok
-                error: 
+                error: null
                 data:
                   country: ZW
                   name: Zimbabwe
                   officialName: Republic of Zimbabwe
                   officialLanguages:
-                  - Chibarwe
-                  - English
-                  - Kalanga
-                  - Khoisan
-                  - Ndau
-                  - Northern Ndebele
-                  - Chewa
-                  - Shona
-                  - Sotho
-                  - Tonga
-                  - Tswana
-                  - Tsonga
-                  - Venda
-                  - Xhosa
-                  - Zimbabwean Sign Language
+                    - Chibarwe
+                    - English
+                    - Kalanga
+                    - Khoisan
+                    - Ndau
+                    - Northern Ndebele
+                    - Chewa
+                    - Shona
+                    - Sotho
+                    - Tonga
+                    - Tswana
+                    - Tsonga
+                    - Venda
+                    - Xhosa
+                    - Zimbabwean Sign Language
                   officialLanguageCount: 15
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':
           description: Requested resource was not found
         '500':
-          description: A server error has occured, try again later
+          description: A server error has occurred, try again later
 components:
   securitySchemes:
     api_key:
@@ -81,4 +87,4 @@ components:
       name: x-api-key
       in: header
 security:
-- api_key: []
+  - api_key: []
