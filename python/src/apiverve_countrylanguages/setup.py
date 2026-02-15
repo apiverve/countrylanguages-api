@@ -10,20 +10,14 @@ if os.path.exists(requirements_file):
 
 setup(
     name='apiverve_countrylanguages',
-    version='1.1.12',
+    version='1.1.13',
     packages=find_packages(),
     include_package_data=True,
     install_requires=install_requires,
     description='Country Languages is a simple tool for getting the list of official and commonly spoken languages in a specific country.',
     author='APIVerve',
     author_email='hello@apiverve.com',
-    url='https://apiverve.com',
-    project_urls={
-        'Homepage': 'https://apiverve.com',
-        'Documentation': 'https://docs.apiverve.com/ref/countrylanguages',
-        'Source': 'https://github.com/apiverve/countrylanguages-api',
-        'Bug Tracker': 'https://github.com/apiverve/countrylanguages-api/issues'
-    },
+    url='https://apiverve.com/marketplace/countrylanguages?utm_source=pypi&utm_medium=homepage',
     classifiers=[
         'Programming Language :: Python :: 3',
         'Operating System :: OS Independent',
