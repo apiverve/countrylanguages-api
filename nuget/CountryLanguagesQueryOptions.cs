@@ -12,7 +12,6 @@ namespace APIVerve.API.CountryLanguages
     {
         /// <summary>
         /// The Country 2 letter ISO code for which you want to get languages for data (e.g., ZW)
-        /// Example: ZW
         /// </summary>
         [JsonProperty("name")]
         public string Name { get; set; }
