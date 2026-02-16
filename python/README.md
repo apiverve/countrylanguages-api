@@ -236,8 +236,9 @@ from apiverve_countrylanguages.apiClient import CountrylanguagesAPIClient
 
 api = CountrylanguagesAPIClient("[YOUR_API_KEY]")
 
+query = { "name": "ZW" }
+
 try:
-    query = { "name": "ZW" }
     result = api.execute(query)
     print(result)
 finally:
