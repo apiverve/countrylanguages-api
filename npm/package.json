@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/countrylanguages",
-  "version": "1.1.13",
+  "version": "1.1.14",
   "description": "Country Languages is a simple tool for getting the list of official and commonly spoken languages in a specific country.",
   "main": "index.js",
   "types": "index.d.ts",
