@@ -4,20 +4,32 @@ declare module '@apiverve/countrylanguages' {
     secure?: boolean;
   }
 
+  /**
+   * Describes fields the current plan does not unlock. Locked fields arrive as null
+   * in `data`; `locked_fields` names them, using dot paths for nested fields.
+   * Absent when the plan unlocks everything.
+   */
+  export interface PremiumInfo {
+    message: string;
+    upgrade_url: string;
+    locked_fields: string[];
+  }
+
   export interface countrylanguagesResponse {
     status: string;
     error: string | null;
     data: CountryLanguagesData;
     code?: number;
+    premium?: PremiumInfo;
   }
 
 
   interface CountryLanguagesData {
-      country:               string;
-      name:                  string;
-      officialName:          string;
-      officialLanguages:     string[];
-      officialLanguageCount: number;
+      country:               null | string;
+      name:                  null | string;
+      officialName:          null | string;
+      officialLanguages:     (null | string)[];
+      officialLanguageCount: number | null;
   }
 
   export default class countrylanguagesWrapper {
