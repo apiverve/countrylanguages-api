@@ -18,7 +18,7 @@ def call_countrylanguages_api():
     """
     try:
         # Query parameters
-        params &#x3D; {&#x27;name&#x27;: &#x27;ZW&#x27;}
+        params &#x3D; {&#x27;country&#x27;: &#x27;ZW&#x27;}
 
         headers = {
             'x-api-key': API_KEY

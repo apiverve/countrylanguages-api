@@ -1,13 +1,13 @@
-# [Country Languages API](https://apiverve.com/marketplace/countrylanguages?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [Country Languages API](https://apiverve.com/marketplace/countrylanguages?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-Country Languages is a simple tool for getting the list of official and commonly spoken languages in a specific country.
+Country Languages lists official and commonly spoken languages for any country using its two-letter ISO code. It returns the common country name, formal official name, an array of recognized languages, and the total language count.
 
 The Country Languages API provides a simple, reliable way to integrate country languages functionality into your applications. Built for developers who need production-ready country languages capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://apiverve.com/marketplace/countrylanguages?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/countrylanguages?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/countrylanguages?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/countrylanguages?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-GET-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -31,7 +31,7 @@ The Country Languages API provides a simple, reliable way to integrate country l
 async function callCountryLanguagesAPI() {
     try {
         const params = new URLSearchParams({
-            name: 'ZW'
+            country: 'ZW'
         });
 
         const response = await fetch(`https://api.apiverve.com/v1/countrylanguages?${params}`, {
@@ -54,7 +54,7 @@ callCountryLanguagesAPI();
 ### Using cURL
 
 ```bash
-curl -X GET "https://api.apiverve.com/v1/countrylanguages?name=ZW" \
+curl -X GET "https://api.apiverve.com/v1/countrylanguages?country=ZW" \
   -H "x-api-key: YOUR_API_KEY_HERE"
 ```
 
@@ -161,7 +161,7 @@ go get github.com/apiverve/countrylanguages-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [Country Languages API](https://apiverve.com/marketplace/countrylanguages?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [Country Languages API](https://apiverve.com/marketplace/countrylanguages?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/countrylanguages](https://docs.apiverve.com/ref/countrylanguages)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -240,7 +240,7 @@ A real response from the Country Languages API:
 
 ## Support & Community
 
-- 🏠 **API Home**: [Country Languages API](https://apiverve.com/marketplace/countrylanguages?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [Country Languages API](https://apiverve.com/marketplace/countrylanguages?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)

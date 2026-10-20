@@ -15,7 +15,7 @@ async function callCountryLanguagesAPI() {
   try {
     // Query parameters
     const params &#x3D; new URLSearchParams({
-            name: &#x27;ZW&#x27;
+            country: &#x27;ZW&#x27;
         });
 
     const response = await fetch(`${API_URL}?${params}`, {
