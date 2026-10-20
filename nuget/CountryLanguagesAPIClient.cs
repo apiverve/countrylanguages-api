@@ -67,7 +67,7 @@ namespace APIVerve.API.CountryLanguages
         /// <summary>Validation rules for parameters</summary>
         private static readonly Dictionary<string, ValidationRule> _validationRules = new Dictionary<string, ValidationRule>
         {
-            { "name", new ValidationRule { Type = "string", Required = true } }
+            { "country", new ValidationRule { Type = "string", Required = true } }
         };
 
         /// <summary>Format validation patterns</summary>
