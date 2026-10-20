@@ -1,13 +1,12 @@
 Country Languages API
 ============
 
-Country Languages is a simple tool for getting the list of official and commonly spoken languages in a specific country.
+Country Languages lists official and commonly spoken languages for any country using its two-letter ISO code. It returns the common country name, formal official name, an array of recognized languages, and the total language count.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a Python API Wrapper for the [Country Languages API](https://apiverve.com/marketplace/countrylanguages?utm_source=pypi&utm_medium=readme)
+[![PyPI version](https://img.shields.io/pypi/v/apiverve-countrylanguages.svg)](https://pypi.org/project/apiverve-countrylanguages/)
+
+This is a Python wrapper for the [Country Languages API](https://apiverve.com/marketplace/countrylanguages?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -29,8 +28,8 @@ pip3 install apiverve-countrylanguages
 
 ## Configuration
 
-Before using the countrylanguages API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=readme)
+Before using the Country Languages API client, you have to setup your account and obtain your API Key.
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -44,7 +43,7 @@ from apiverve_countrylanguages.apiClient import CountrylanguagesAPIClient
 # Initialize the client with your APIVerve API key
 api = CountrylanguagesAPIClient("[YOUR_API_KEY]")
 
-query = { "name": "ZW" }
+query = { "country": "ZW" }
 
 try:
     # Make the API call
@@ -60,7 +59,7 @@ except Exception as e:
 
 ## Usage
 
-The Country Languages API documentation is found here: [https://docs.apiverve.com/ref/countrylanguages](https://docs.apiverve.com/ref/countrylanguages?utm_source=pypi&utm_medium=readme).
+The Country Languages API documentation is found here: [https://docs.apiverve.com/ref/countrylanguages](https://docs.apiverve.com/ref/countrylanguages?utm_source=pypi&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
@@ -82,7 +81,7 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "name": "ZW" }
+query = { "country": "ZW" }
 ```
 
 ###### Simple Request
@@ -140,7 +139,7 @@ from apiverve_countrylanguages.apiClient import CountrylanguagesAPIClient, Count
 
 api = CountrylanguagesAPIClient("[YOUR_API_KEY]")
 
-query = { "name": "ZW" }
+query = { "country": "ZW" }
 
 try:
     result = api.execute(query)
@@ -161,7 +160,7 @@ from apiverve_countrylanguages.apiClient import CountrylanguagesAPIClient, Count
 
 api = CountrylanguagesAPIClient("[YOUR_API_KEY]")
 
-query = { "name": "ZW" }
+query = { "country": "ZW" }
 
 try:
     result = api.execute(query)
@@ -195,7 +194,7 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_countrylanguages.apiClient import CountrylanguagesAPIClient, CountrylanguagesAPIClientError
 
-query = { "name": "ZW" }
+query = { "country": "ZW" }
 
 # Using context manager ensures proper cleanup
 with CountrylanguagesAPIClient("[YOUR_API_KEY]") as api:
@@ -221,7 +220,7 @@ from apiverve_countrylanguages.apiClient import CountrylanguagesAPIClient
 # Enable debug mode
 api = CountrylanguagesAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "name": "ZW" }
+query = { "country": "ZW" }
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -236,7 +235,7 @@ from apiverve_countrylanguages.apiClient import CountrylanguagesAPIClient
 
 api = CountrylanguagesAPIClient("[YOUR_API_KEY]")
 
-query = { "name": "ZW" }
+query = { "country": "ZW" }
 
 try:
     result = api.execute(query)
@@ -250,7 +249,7 @@ finally:
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -261,12 +260,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=readme) and all legal documents and agreements.
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=referral&utm_content=readme) and all legal documents and agreements.
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 
