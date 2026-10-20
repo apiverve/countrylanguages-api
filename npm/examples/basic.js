@@ -15,7 +15,7 @@ const api = new countrylanguagesAPI({
 
 // Example query
 var query = {
-  name: "ZW"
+  country: "ZW"
 };
 
 // Make the API request using callback

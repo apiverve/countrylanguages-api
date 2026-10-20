@@ -30,7 +30,7 @@ class countrylanguagesWrapper {
         this.baseURL = 'https://api.apiverve.com/v1/countrylanguages';
 
         // Validation rules for parameters (generated from schema)
-        this.validationRules = {"name":{"type":"string","required":true}};
+        this.validationRules = {"country":{"type":"string","required":true}};
     }
 
     /**
