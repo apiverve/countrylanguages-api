@@ -1,6 +1,6 @@
 # Country Languages API - PHP Package
 
-Country Languages is a simple tool for getting the list of official and commonly spoken languages in a specific country.
+Country Languages lists official and commonly spoken languages for any country using its two-letter ISO code. It returns the common country name, formal official name, an array of recognized languages, and the total language count.
 
 ## Installation
 
@@ -27,7 +27,7 @@ use APIVerve\Countrylanguages\Client;
 $client = new Client('YOUR_API_KEY');
 
 // Make a request
-$response = $client->execute(['name' => 'ZW']);
+$response = $client->execute(['country' => 'ZW']);
 
 // Print the response
 print_r($response);
@@ -42,7 +42,7 @@ use APIVerve\Countrylanguages\Exceptions\APIException;
 use APIVerve\Countrylanguages\Exceptions\ValidationException;
 
 try {
-    $response = $client->execute(['name' => 'ZW']);
+    $response = $client->execute(['country' => 'ZW']);
     print_r($response['data']);
 } catch (ValidationException $e) {
     echo "Validation error: " . implode(', ', $e->getErrors());
@@ -101,11 +101,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/countrylanguages?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/countrylanguages?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://apiverve.com/marketplace/countrylanguages?utm_source=php&utm_medium=readme](https://apiverve.com/marketplace/countrylanguages?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/countrylanguages?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/countrylanguages?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License

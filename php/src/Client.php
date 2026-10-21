@@ -15,11 +15,11 @@ use APIVerve\Countrylanguages\Exceptions\ValidationException;
  * @example Basic usage
  * ```php
  * $client = new Client('your_api_key');
- * $response = $client->execute(['name' => 'ZW']);
+ * $response = $client->execute(['country' => 'ZW']);
  * print_r($response);
  * ```
  *
- * @see https://apiverve.com/marketplace/countrylanguages?utm_source=php&utm_medium=readme
+ * @see https://apiverve.com/marketplace/countrylanguages?utm_source=php&utm_medium=referral&utm_content=readme
  */
 class Client
 {
@@ -34,7 +34,7 @@ class Client
      * Validation rules for parameters
      */
     private const VALIDATION_RULES = [
-        'name' => ['type' => 'string', 'required' => true]
+        'country' => ['type' => 'string', 'required' => true]
     ];
 
     /**
