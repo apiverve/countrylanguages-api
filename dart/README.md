@@ -1,11 +1,11 @@
 # Country Languages API - Dart/Flutter Client
 
-Country Languages is a simple tool for getting the list of official and commonly spoken languages in a specific country.
+Country Languages lists official and commonly spoken languages for any country using its two-letter ISO code. It returns the common country name, formal official name, an array of recognized languages, and the total language count.
 
 [![pub package](https://img.shields.io/pub/v/apiverve_countrylanguages.svg)](https://pub.dev/packages/apiverve_countrylanguages)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This is the Dart/Flutter client for the [Country Languages API](https://apiverve.com/marketplace/countrylanguages?utm_source=dart&utm_medium=readme).
+This is the Dart/Flutter client for the [Country Languages API](https://apiverve.com/marketplace/countrylanguages?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## Installation
 
@@ -13,7 +13,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  apiverve_countrylanguages: ^1.1.14
+  apiverve_countrylanguages: ^1.2.3
 ```
 
 Then run:
@@ -34,7 +34,7 @@ void main() async {
 
   try {
     final response = await client.execute({
-      'name': 'ZW'
+      'country': 'ZW'
     });
 
     print('Status: ${response.status}');
@@ -79,12 +79,12 @@ void main() async {
 
 ## API Reference
 
-- **API Home:** [Country Languages API](https://apiverve.com/marketplace/countrylanguages?utm_source=dart&utm_medium=readme)
-- **Documentation:** [docs.apiverve.com/ref/countrylanguages](https://docs.apiverve.com/ref/countrylanguages?utm_source=dart&utm_medium=readme)
+- **API Home:** [Country Languages API](https://apiverve.com/marketplace/countrylanguages?utm_source=dart&utm_medium=referral&utm_content=readme)
+- **Documentation:** [docs.apiverve.com/ref/countrylanguages](https://docs.apiverve.com/ref/countrylanguages?utm_source=dart&utm_medium=referral&utm_content=readme)
 
 ## Authentication
 
-All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=readme).
+All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## License
 
@@ -92,4 +92,4 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=readme)
+Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme)

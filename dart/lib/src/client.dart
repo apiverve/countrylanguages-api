@@ -46,10 +46,10 @@ final _formatPatterns = {
 
 /// Country Languages API client.
 ///
-/// For more information, visit: https://apiverve.com/marketplace/countrylanguages?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/countrylanguages?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
-/// * [name] (required) - The Country 2 letter ISO code for which you want to get languages for data (e.g., ZW)
+/// * [country] (required) - The Country 2 letter ISO code for which you want to get languages for data (e.g., ZW)
 class CountrylanguagesClient {
   final String apiKey;
   final String baseUrl;
@@ -57,7 +57,7 @@ class CountrylanguagesClient {
 
   /// Validation rules for parameters.
   static final Map<String, ValidationRule> _validationRules = <String, ValidationRule>{
-    'name': ValidationRule(type: 'string', required: true),
+    'country': ValidationRule(type: 'string', required: true),
   };
 
   CountrylanguagesClient(this.apiKey, {
