@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/countrylanguages",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Country Languages lists official and commonly spoken languages for any country using its two-letter ISO code. It returns the common country name, formal official name, an array of recognized languages, and the total language count.",
   "main": "index.js",
   "types": "index.d.ts",
